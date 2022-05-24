@@ -1,0 +1,440 @@
+<html lang="ru-PL">
+  <head>
+   <meta charset="UTF-8">
+   <meta name="author" content="OvhKing.site">
+   <meta name="description" content="Магазин проекта CoteCraft 3.0 - Покупка доната, правила, новости, всё это здесь!">
+   
+   <link rel="shortcut icon" href="img/icon.png" type="image/png">
+    
+	
+	<script> document.oncontextmenu = cmenu; function cmenu() { return false; } </script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="res/bootstrap.min.css">
+    <link rel="stylesheet" href="res/style.css">
+    <link rel="stylesheet" href="res/all.min.css">
+	<script src="res/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+   
+   <title>COTECRAFT | Правила проекта</title>  
+   </head>
+
+   <!-- ЗАГРУЗКА -->
+   <style>
+    body {
+      margin: 0;
+    }
+
+    .preloader {
+      /*фиксированное позиционирование*/
+      position: fixed;
+      /* координаты положения */
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      /* фоновый цвет элемента */
+      background: #FFF;
+      /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+      z-index: 1001;
+    }
+
+    .preloader__row {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      width: 70px;
+      height: 70px;
+      margin-top: -35px;
+      margin-left: -35px;
+      text-align: center;
+      animation: preloader-rotate 1s infinite linear;
+    }
+
+    .preloader__item {
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      background-color: #FF0000;
+      border-radius: 100%;
+      width: 35px;
+      height: 35px;
+      animation: preloader-bounce 2s infinite ease-in-out;
+    }
+
+    .preloader__item:last-child {
+      top: auto;
+      bottom: 0;
+      animation-delay: -5s;
+    }
+
+    @keyframes preloader-rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes preloader-bounce {
+
+      0%,
+      100% {
+        transform: scale(0);
+      }
+
+      50% {
+        transform: scale(1);
+      }
+    }
+
+    .loaded_hiding .preloader {
+      transition: 0.3s opacity;
+      opacity: 0;
+    }
+
+    .loaded .preloader {
+      display: none;
+    }
+  </style>
+<body>
+  <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
+   <!-- ЗАГРУЗКА -->
+   
+   <!-- МЕНЮ ДЛЯ ТЕЛЕФОНОВ -->
+   <div id="before-load" style="display: none;">
+		<i class="fa fa-spinner fa-spin" style="display: none;"></i>
+   </div>
+	<div class="modal">
+		<div class="dialog">
+		<div class="close modal-close"><div class="btn"></div></div>
+		<div class="content"></div>
+		</div>
+	</div>
+    <div class="sidenav" id="sidenav_mobile">
+        <div class="container">
+            <span class="close" id="sidenav_mobile_close"><img src="img/close.png"></span>
+        </div>
+        <a href="/" style="cursor: pointer;">Главная</a>
+        <a href="/rules" target="_blank">Правила</a>
+        <a href="https://vk.com/cotecraft" target="_blank">Мы ВКонтакте</a>
+    </div>
+	<!-- МЕНЮ ДЛЯ ТЕЛЕФОНОВ -->
+	
+	<!-- МЕНЮ -->
+    <header>
+        <div class="navbar-light navbar-expand-lg2">
+            <div class="container">
+                <div class="menu d-block d-lg-flex align-items-center justify-content-between">
+                    <span id="sidenav_mobile_toggle" class="d-lg-none d-xl-none"><img src="img/menu.png"></span>
+                    <a href="/" style="cursor:pointer"><img class="logo" src="img/logo1.png"></a>
+                    <span class="d-none d-lg-inline d-md-none">
+				        <a href="/" style="cursor: pointer;"><h3 class="fa fa-home"></h3> Главная</a>
+				        <a href="/rules" target="_blank"><h3 class="fa fa-comments"></h3> Правила</a>
+						<a href="http://mc.cotecraft.su:8123/" target="_blank"><h3 class="fa fa-map"></h3> Карта</a>
+				        <a target="_blank" href="https://vk.com/cotecraft" target="_blank"><h3 class="fab fa-vk"></h3> ВКонтакте</a>
+						<h3 class="fa fa-user"></h3> <big>Онлайн:</big> <a id="online"></a>
+                	</span>
+                    <a target="_blank" class="btnPlay d-block" href="/play">
+                        <div><img src="img/btn-play.svg"></div>
+                        <span>КАК ЗАЙТИ НА СЕРВЕР?</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header> 
+  <!-- МЕНЮ --> 
+  
+  <!-- ПУНКТЫ -->
+    <style>
+   @font-face {
+    font-family: Font;
+    src: url(res/16546.ttf);
+   }
+  </style>
+  
+  <div class="col-12 col-lg-12">
+    <div class="block howtostart">
+        <center><h1><big><big><big><big><strong><font style="font-family:Font, Regular; font-size:60%"><big>ПРАВИЛА ПРОЕКТА</big></big></big></big></big></font></h1></strong></center>
+        <br>
+		<br>
+		<br>
+		<div class="container">
+		<div class="row justify-content-center">
+            <div class="col-6 col-lg-6 list">
+                <div><span>1.1</span>Незнание правил не освобождает вас от ответственности.</a></div>
+            </div>
+            <div class="col-6 col-lg-6 list">
+                <div><span>1.2</span>Начав играть на наших серверах, Вы автоматически подтверждаете своё согласие с данным сводом правил.</div>
+            </div>
+            <div class="col-6 col-lg-6 list">
+                <div><span>1.3</span>Администратор вправе наказать игрока по причине, не указанной в настоящих правилах.</div>
+            </div>
+            <div class="col-6 col-lg-6 list">
+                <div><span>1.4</span>Игроки обязаны выполнять требования хелперов/модераторов/Администраторов и предписания данных правил.</div>
+            </div>
+            <div class="col-6 col-lg-6 list">
+                <div><span>1.5</span>Администрация ведет логи всех действий игроков на сервере и всех сообщений чата.</div>
+            </div>
+            <div class="col-6 col-lg-6 list">
+                <div><span>1.6</span>Администрация имеет право корректировать данный свод правил без уведомления игрока.</div>
+            </div>
+            <div class="col-6 col-lg-6 list">
+                <div><span>1.7</span>Администрация не обязана осуществлять Вам помощь в виде ускорения постройки здания, выдачи предметов, ресурсов и др.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>1.8</span>Администрация НЕ обязана возвращать вещи в следующих случаях: Удаление системой очистки дропа, Кража имущества с незаприваченной территории, Кража имущества игроками, состоящими в привате.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>1.9</span>Запрещается предпринимать любые попытки обхода выданных наказаний.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>1.10</span>Если администрация просит вас пройти проверку, то вы должны включить демонстрацию экрана в Discord/Skype, но также вы имеете полное право отказаться проходить её, но в этом случае вы получаете блокировку аккаунта. Игнорирование проверки, отсутствие данных программ, выход с сервера будет расцениваться как уклон от проверки.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>2.1</span>Недопустимо использование или содержание в нике слов вида: admin, moder, helper. Ник, клан, префиксы не должны содержать, мата, оскорблений, названий других проектов, сайтов.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>2.2</span>Запрещается предоставлять свой аккаунт 3-м лицам для игры на сервере.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>2.3</span>Ответственность несет владелец аккаунта, независимо от того, кто совершал действия под данным аккаунтом.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>2.4</span>Запрещена продажа/передача аккаунтов.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>2.5</span>Администрация сервера восстанавливает взломанные/потерянные аккаунты, при предоставлении доказательств покупки доната (чек оплаты).</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>2.6</span>Запрещено создание мультиаккаунтов с целью обхода наказаний, ботоводства для получения ускоренной прокачки статистики.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>3.1</span>Запрещены любые способы гриферства, ловушки. (НЕ ДЕЙСТВУЕТ НА РЕЖИМЕ ГРИФ)</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>3.2</span>Запрещено мошенничество, намеренный обман администрации.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>3.3</span>Запрещается распространение вредоносного контента(читы, винлокеры, и т.д)</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>3.4</span>Игрок имеет право проводить раздачи.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>3.5</span>Запрещено подстрекать третьих лиц на нарушение правил.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>3.6</span>Запрещено выдавать себя за администрацию.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>3.7</span>Игроки и донатеры не имеют право пользоваться сторонними программами, скриптами (читы, скрипты, кликеры)</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>3.8</span>Вызывание неполадок в работе сервера или попытки обрушить сервер, путем специально вызванных лагов или подобного, влекут за собой глобальный бан.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>3.9</span>Запрещается намеренно провоцировать, заталкивать игроков в зону PvP. (НЕ ДЕЙСТВУЕТ НА РЕЖИМЕ ГРИФ)</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>3.10</span>Запрещается использование некорректных скинов, плащей (обнаженка, нацизм и т.п.).</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>3.11</span>Запрещено использование багов, недочетов, или других нестандартных средств для получения преимущества над другими игроками, а также распространять любую информацию о их существовании.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>4.1</span>Донатер не имеет право кикать, банить, давать мут без причины.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>4.2</span>Донатер не имеет право ломать чужие дома даже если они ему не нравятся.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>4.3</span>Телепортация без причины и убийство без разрешения игрока запрещена.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>4.4</span>Донатерам запрещено забирать у игроков какие-либо вещи и мешать игровому процессу.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>4.5</span>Запрещено в любом виде злоупотребление командами(Пускание молнии)</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>5.1</span>Постройки оставленные за зоной привата будут доступны для других игроков. Администрация не несет ответственность за потерю имущества.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>5.2</span>Вся незаприваченная территория попавшая под приват другого игрока становится его собственностью.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>5.3</span>Игрок обязан покинуть чужую территорию по просьбе ее (НЕ ДЕЙСТВУЕТ НА РЕЖИМЕ ГРИФ)</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>5.4</span>Запрещено ставить точки дома/варпы на чужой территории без согласия владельца. (НЕ ДЕЙСТВУЕТ НА РЕЖИМЕ ГРИФ)</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>5.5</span>Запрещено приватить территорию над постройками других игроков. (НЕ ДЕЙСТВУЕТ НА РЕЖИМЕ ГРИФ)</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>5.6</span>Запрещена блокировка доступа к чужим сооружениям.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>5.7</span>Запрещается постройка половых органов и нацистской символики.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>5.8</span>Запрещена постройка огромных кубов, которые не несут в себе никакого смысла, данные постройки будут сносится. (НЕ ДЕЙСТВУЕТ НА РЕЖИМЕ ГРИФ)</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>5.9</span>Запрещена постройка столбов. (НЕ ДЕЙСТВУЕТ НА РЕЖИМЕ ГРИФ)</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>6.1</span>Игрок не имеет право: употреблять мат (в том числе завуалированный/исковерканный) или нецензурную лексику в любом виде;оскорблять или насмехаться (виде троллинга) над игроками;создавать конфликтные ситуации, путём подстрекания третьего лица на нарушение правил;пропаганда наркотических средств, психотропных веществ.отправлять пикатные или сексуальные (порнографические) сообщения;разжигать межнациональные розни.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>6.2</span>Игрок не имеет право оскорблять/унижать/троллировать родителей игроков сервера.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>6.3</span> Игрок не имеет право критиковать/оскорблять/унижать/принуждать/провоцировать/троллинг в сторону Команды проекта или самого Проекта (сервера) в целом.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>6.4</span>Запрещён спам, реклама Discord каналов, сторонних сайтов и проектов.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>6.5</span>Запрещёно написание сообщения заглавными буквами (капс от 5ти букв).</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>6.6</span>Запрещено пускать слухи о заведомо ложных изменениях на серверах, а также о вайпах.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>6.7</span>Флуд (в том числе дублирование сообщений) и сообщения, не имеющие смысла, в больших количествах запрещены.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>6.8</span>Разрешена публикация только одного сообщения рекламного характера (например, реклама варпов) раз в 2 мин. В противном случае это будет засчитано за флуд.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>6.9</span>Для просьб "кто приютит" разрешена публикация сообщений не чаще одного раза в 5 мин. В противном случае это будет засчитано за флуд.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>6.10</span>Запрещена организация флуда провокационными сообщениями.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>6.11</span>Запрещено попрошайничество (выпрашивать что-либо у администрации/игроков на безвозмездной основе).</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>6.12</span>Запрещено продавать игровые предметы, привилегии, различные услуги за реальные деньги.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>6.13</span>Запрещено угрожать в любой форме игрокам сервера.</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>7.1</span>Игрок имеет право рекламировать свой стрим, проводящийся на сервере без статуса "YouTube"</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>7.2</span>Запрещена реклама видеороликов и каналов без статуса "YouTube"</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>7.3</span>На стриме запрещено: оскорбление проекта, унижение администрации</div>
+            </div>
+			<div class="col-6 col-lg-6 list">
+                <div><span>7.4</span>На стриме запрещено распространять ложную информацию о сервере/администрации</div>
+            </div>
+            </div>
+        </div>
+		</div>
+    </div>
+  <!-- ПУНКТЫ -->
+  
+   <br>
+   <br>
+  
+  <!-- КОНТАКТЫ -->
+  <div class="container">
+  <div class="col-12 col-lg-12">
+    <div class="row block donate text-center howtostart">
+        <div class="col-12 col-lg-4">
+            <a <a href="https://vk.com/cotecraft"/><h1 class="fab fa-vk">
+            <h3><a href="https://vk.com/cotecraft">Наш ВКонтакте</a></h3> 
+        </div>
+        <div class="col-12 col-lg-4">
+            <a href="https://discord.gg/RX85cPm"/><h1 class="fab fa-discord"/>
+            <h3><a href="https://discord.gg/RX85cPm">Наш Дискорд</a></h3>
+        </div>
+        <div class="col-12 col-lg-4">
+            <a href="https://vk.me/cotecraft"/><h1 class="fa fa-envelope"/>
+            <h3><a href="https://vk.me/cotecraft">Есть вопрос?</a></h3>
+        </div>
+    </div>
+   </div>
+  </div>
+  <!-- КОНТАКТЫ -->
+   
+   <br>
+   <br>
+   <br>
+   <br>
+   
+  <!-- АВТОРСКИЕ ПРАВА -->
+  <footer>
+    <div class="container">
+        <p>2012-2020 © COTECRAFT - Все права защищены!</p>
+        <p>Автор: <a href="https://vk.com/ovh_king" style="color: black;">OvhKing</a></p>
+    </div>
+  </footer>
+   <!-- АВТОРСКИЕ ПРАВА -->
+   
+   
+   <!-- СКРИПТ ПО ПЕРЕХОДУ ПО МЕНЮ ДЛЯ ТЕЛЕФОНОВ -->
+  <script type="text/javascript">
+        $(function() {
+            $('#sidenav_mobile_close').click(function() {
+                $('#sidenav_mobile').removeClass('active');
+            });
+            $('#sidenav_mobile_toggle').click(function() {
+                $('#sidenav_mobile').toggleClass('active');
+            });
+        });
+
+        $.fn.setClass = function(classes) {
+            this.attr('class', classes);
+            return this;
+        };
+    </script>
+	<!-- СКРИПТ ПО ПЕРЕХОДУ ПО МЕНЮ ДЛЯ ТЕЛЕФОНОВ -->
+	
+	
+	<!-- ФОН -->
+	<style>
+	   body {
+		background-image: url('img/fone.png');
+		background-position: center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+		background-attachment: fixed;
+	}
+	</style>
+	<!-- ФОН -->
+	
+	<!-- ЗАГРУЗКА -->
+	  <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+       </script>
+     <!-- ЗАГРУЗКА -->
+	 
+	 <!-- ОНЛАЙН -->
+	  <script type="text/javascript">
+         $.post('/engine/ajax.php?type=stat/online',{},function(data){
+         $('#online').html(data);
+         });
+      </script>
+	 <!-- ОНЛАЙН -->
+</body>
+</html>

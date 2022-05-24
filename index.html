@@ -1,0 +1,526 @@
+<html lang="ru-PL">
+  <head>
+   <meta charset="UTF-8">
+   <meta name="description" content="Магазин проекта CubsMc - Покупка доната, правила, новости, всё это здесь!">
+   
+   <link rel="shortcut icon" href="img/icon.png" type="image/png">
+  
+	<script> document.oncontextmenu = cmenu; function cmenu() { return false; } </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="res/bootstrap.min.css">
+    <link rel="stylesheet" href="res/style.css">
+    <link rel="stylesheet" href="res/all.min.css">
+	<script src="res/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      
+    <link rel="stylesheet" href="res/loader.css">  
+	<link rel="stylesheet" href="res/light.css"> 
+	  
+	  
+   <title>CubsMc | Главная</title>  
+
+   </head>
+   
+   <!-- ЗАГРУЗКА -->
+   <style>
+    body {
+      margin: 0;
+    }
+
+    .preloader {
+      /*фиксированное позиционирование*/
+      position: fixed;
+      /* координаты положения */
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      /* фоновый цвет элемента */
+      background: #FFF;
+      /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+      z-index: 1001;
+    }
+
+    .preloader__row {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      width: 70px;
+      height: 70px;
+      margin-top: -35px;
+      margin-left: -35px;
+      text-align: center;
+      animation: preloader-rotate 1s infinite linear;
+    }
+
+    .preloader__item {
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      background-color: #FF0000;
+      border-radius: 100%;
+      width: 35px;
+      height: 35px;
+      animation: preloader-bounce 2s infinite ease-in-out;
+    }
+
+    .preloader__item:last-child {
+      top: auto;
+      bottom: 0;
+      animation-delay: -5s;
+    }
+
+    @keyframes preloader-rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes preloader-bounce {
+
+      0%,
+      100% {
+        transform: scale(0);
+      }
+
+      50% {
+        transform: scale(1);
+      }
+    }
+
+    .loaded_hiding .preloader {
+      transition: 0.3s opacity;
+      opacity: 0;
+    }
+
+    .loaded .preloader {
+      display: none;
+    }
+  </style>
+<body>
+  <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
+   <!-- ЗАГРУЗКА -->
+   
+  <!-- ГЕРЛЯНДЫ -->   
+   <ul class="lightrope">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+  <!-- ГЕРЛЯНДЫ -->
+   
+   <!-- МЕНЮ ДЛЯ ТЕЛЕФОНОВ -->
+   <div id="before-load" style="display: none;">
+		<i class="fa fa-spinner fa-spin" style="display: none;"></i>
+   </div>
+	<div class="modal">
+		<div class="dialog">
+		<div class="close modal-close"><div class="btn"></div></div>
+		<div class="content"></div>
+		</div>
+	</div>
+    <div class="sidenav" id="sidenav_mobile">
+        <div class="container">
+            <span class="close" id="sidenav_mobile_close"><img src="img/close.png"></span>
+        </div>
+        <a href="/" style="cursor: pointer;">Главная</a>
+        <a target="_blank" href="https://vk.com/CubsMc" target="_blank">Правила</a>
+        <a href="https://vk.com/CubsMc" target="_blank">Мы ВКонтакте</a>
+    </div>
+	<!-- МЕНЮ ДЛЯ ТЕЛЕФОНОВ -->
+	
+	<!-- МЕНЮ -->
+    <header>
+        <div class="navbar-light navbar-expand-lg2">
+            <div class="container">
+                <div class="menu d-block d-lg-flex align-items-center justify-content-between">
+                    <span id="sidenav_mobile_toggle" class="d-lg-none d-xl-none"><img src="img/menu.png"></span>
+                    <a href="/" style="cursor:pointer"><img class="logo" src="img/logo1.png"></a>
+                    <span class="d-none d-lg-inline d-md-none">
+				        <a href="/" style="cursor: pointer;"><h3 class="fa fa-home"></h3> Главная</a>
+				        <a target="_blank" href="https://vk.com/CubsMc" target="_blank"><h3 class="fa fa-comments"></h3> Правила</a>
+				        <a target="_blank" href="https://vk.com/CubsMc" target="_blank"><h3 class="fab fa-vk"></h3> ВКонтакте</a>
+						<h3 class="fa fa-user"></h3> <big>Онлайн:</big> <a id="online"></a>
+                	</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header> 
+  <!-- МЕНЮ --> 
+  
+  <!-- ИНФОРМАЦИЯ --> 
+  <style>
+   @font-face {
+    font-family: Font;
+    src: url(res/16546.ttf);
+   }
+  </style>
+  <style>
+   .dfn {
+     transform: scale(0.95);
+     animation: pulse 3s ease-in-out infinite;
+   }
+
+   @keyframes pulse {
+    from {
+     transform: scale(0.95);
+   }
+   50% {
+     transform: scale(1);
+   }
+   to {
+     transform: scale(0.95);
+   }
+  }
+  </style>
+	  <div id="top-content" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="main-slider">
+                        <div class="slide">
+                                <div class="spacer"></div>
+                                                        <h1><big><big><big><big><strong><font style="font-family:Font, Regular; font-size:100%" color="#ff0000"><big>CubsMc</big></font></h1></strong>
+														<br>
+														<h1><strong>Приветствуем на сайте проекта.</h1></strong>
+														<h1><strong>На сайте вы узнаете много чего интересного:</h1></strong>
+														<br>
+														<a href="#pokupka" class="js-scroll-trigger"><h1><strong>⚡ Покупка доната, кейсов, или возможность</h1></strong></a>
+														<br>
+														<a href="#news" class="js-scroll-trigger"><h1><strong>⚡ Последние новости, о нашем проекте</h1></strong></a>
+														<br>
+														<a target="_blank" href="/play" class="js-scroll-trigger"><h1><strong>⚡ Как зайти на сервер?</h1></strong></a>
+														<br>
+														<a target="_blank" href="/rules" class="js-scroll-trigger"><h1><strong>⚡ Правила проекта</h1></strong></a>
+														<br>
+														<a href="#revs" class="js-scroll-trigger"><h1><strong>⚡ Отзывы игроков</h1></strong></a>										
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                   <div class="dfn"><img style="padding-bottom: 100px" width="320" height="620" src="img/dfn.png" alt=""/> </div>
+				   <section id="pokupka" class="pokupka">
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- ИНФОРМАЦИЯ --> 
+  
+  <br>
+  
+  
+  <!-- ПОКУПКА ДОНАТА --> 
+  <center><h1><big><big><big><big><strong><font style="font-family:Font, Regular; font-size:60%"><big>ПОКУПКА ПРИВИЛЕГИЙ</big></big></big></big></big></font></h1></strong></center>
+    
+  <br>
+  <br>
+  
+  <center>
+    <div class="container">
+      <div class="col-md-8">
+         <ul class="nav nav-tabs nav-fill" style="margin-bottom: 10px;">
+							<li role="presentation" class="nav-item btn-red"><a href="#2" role="tab" class='nav-link active' data-toggle="tab" style="color:red">Выживание</a></li><li role="presentation" class="nav-item btn-red"><a href="#4" role="tab" class='nav-link' data-toggle="tab" style="color:red">Гриф</a></li>
+		 </ul>
+					<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="2"><form action="/" method="post" id="phpmc"><input type="hidden" name="srv_id" class="input-srv_id"  value="2"><div class="form-group has-feedback"><input  style="width:100x;height:50px;font-size:80%" type="text" class=" input-nick form-control" name="nickname" id="nickname" placeholder="Введите ник"></div><div  class="form-group"><select  style="width:100x;height:50px;font-size:80%" id="group" name="group" class=" select-group form-control"><option style="font-size:100%" selected disabled>Выберите товар</option><optgroup style="font-size:80%" label="Привилегии"><option  style="font-size:120%" style="color:black" data-price="9" data-id="33" value="33">[ Премиум ] - 9 рублей.</option><option  style="font-size:120%" style="color:black" data-price="15" data-id="34" value="34">[ Креатив ] - 15 рублей.</option><option  style="font-size:120%" style="color:black" data-price="29" data-id="35" value="35">[ Фантом ] - 29 рублей.</option><option  style="font-size:120%" style="color:black" data-price="45" data-id="36" value="36">[ Феникс ] - 45 рублей.</option><option  style="font-size:120%" style="color:black" data-price="50" data-id="37" value="37">[ Мастер ] - 50 рублей.</option><option  style="font-size:120%" style="color:black" data-price="59" data-id="38" value="38">[ Император ] - 59 рублей.</option><option  style="font-size:120%" style="color:black" data-price="75" data-id="39" value="39">[ Дракон ] - 75 рублей.</option><option  style="font-size:120%" style="color:black" data-price="120" data-id="40" value="40">[ Вампир ] - 120 рублей.</option><option  style="font-size:120%" style="color:black" data-price="250" data-id="41" value="41">[ Ангел ] - 250 рублей.</option><option  style="font-size:120%" style="color:black" data-price="340" data-id="42" value="42">[ Демон ] - 340 рублей.</option><option  style="font-size:120%" style="color:black" data-price="475" data-id="43" value="43">[ Чародей ] - 475 рублей.</option></optgroup><optgroup style="font-size:80%" label="Администрация"><option  style="font-size:120%" style="color:black" data-price="699" data-id="44" value="44">[ КОТИК ] - 699 рублей.</option><option  style="font-size:120%" style="color:black" data-price="1499" data-id="45" value="45">[ RCON ] - 1499 рублей.</option></optgroup><optgroup style="font-size:80%" label="Донат-Кейс"><option  style="font-size:120%" style="color:black" data-price="15" data-id="46" value="46">[ Обык - 1шт. ] - 15 рублей.</option><option  style="font-size:120%" style="color:black" data-price="70" data-id="47" value="47">[ Обык - 5шт. ] - 70 рублей.</option><option  style="font-size:120%" style="color:black" data-price="210" data-id="48" value="48">[ Обык - 15шт. ] - 210 рублей.</option><option  style="font-size:120%" style="color:black" data-price="150" data-id="49" value="49">[ Про - 1шт. ] - 150 рублей.</option><option  style="font-size:120%" style="color:black" data-price="319" data-id="50" value="50">[ Про - 3шт. ] - 319 рублей.</option><option  style="font-size:120%" style="color:black" data-price="250" data-id="51" value="51">[ ВиН - 1шт. ] - 250 рублей.</option></optgroup><optgroup style="font-size:80%" label="Прочее"><option  style="font-size:120%" style="color:black" data-price="59" data-id="63" value="63">[ РАЗБАН ] - 59 рублей.</option><option  style="font-size:120%" style="color:black" data-price="149" data-id="64" value="64">[ Иммунитет ]  - 149 рублей.</option><option  style="font-size:120%" style="color:black" data-price="50" data-id="65" value="65">[ ПРЕФИКС ]  - 50 рублей.</option></optgroup></select></div><div class="vk_id"></div><input  style="width:100x;height:50px;font-size:80%" type="text" name="promo" class=" input-promo form-control" id="promo" placeholder="Введите промо-код (если есть)"><br><button style="width:100x;height:50px;font-size:80%" type="submit" name="buy" id="buy" class="btn-danger submit buy_btn btn btn-block" selected disabled>Введите ник и выберите донат</button></form></div><div role="tabpanel" class="tab-pane " id="4"><form action="/" method="post" id="phpmc"><input type="hidden" name="srv_id" class="input-srv_id"  value="4"><div class="form-group has-feedback"><input  style="width:100x;height:50px;font-size:80%" type="text" class=" input-nick form-control" name="nickname" id="nickname" placeholder="Введите ник"></div><div  class="form-group"><select  style="width:100x;height:50px;font-size:80%" id="group" name="group" class=" select-group form-control"><option style="font-size:100%" selected disabled>Выберите товар</option><optgroup style="font-size:80%" label="Привилегии"><option  style="font-size:120%" style="color:black" data-price="9" data-id="52" value="52">[ HERO ] - 9 рублей.</option><option  style="font-size:120%" style="color:black" data-price="19" data-id="53" value="53">[ GOD ] - 19 рублей.</option><option  style="font-size:120%" style="color:black" data-price="129" data-id="54" value="54">[ GUARD ] - 129 рублей.</option><option  style="font-size:120%" style="color:black" data-price="199" data-id="55" value="55">[ CRYSTAL ] - 199 рублей.</option><option  style="font-size:120%" style="color:black" data-price="299" data-id="56" value="56">[ IMMORTAL ] - 299 рублей.</option><option  style="font-size:120%" style="color:black" data-price="499" data-id="57" value="57">[ ANGEL ] - 499 рублей.</option><option  style="font-size:120%" style="color:black" data-price="699" data-id="58" value="58">[ ZEUS ]  - 699 рублей.</option></optgroup><optgroup style="font-size:80%" label="Администрация"><option  style="font-size:120%" style="color:black" data-price="1499" data-id="59" value="59">[ DEMETRA ] - 1499 рублей.</option></optgroup><optgroup style="font-size:80%" label="Донат-Кейс"><option  style="font-size:120%" style="color:black" data-price="59" data-id="60" value="60">[ 1 ключ ] - 59 рублей.</option><option  style="font-size:120%" style="color:black" data-price="149" data-id="61" value="61">[ 3 ключа ] - 149 рублей.</option><option  style="font-size:120%" style="color:black" data-price="499" data-id="62" value="62">[ 25 ключей ] - 499 рублей.</option></optgroup></select></div><div class="vk_id"></div><input  style="width:100x;height:50px;font-size:80%" type="text" name="promo" class=" input-promo form-control" id="promo" placeholder="Введите промо-код (если есть)"><br><button style="width:100x;height:50px;font-size:80%" type="submit" name="buy" id="buy" class="btn-danger submit buy_btn btn btn-block" selected disabled>Введите ник и выберите донат</button></form></div>
+					</div>
+      </div>
+    </div>
+  </center>
+  </section>
+  <!-- ПОКУПКА ДОНАТА -->
+  
+  <br>
+  <br>
+ 
+  
+  <section id="revs" class="revs">
+  <br>
+  <br>
+  <br>
+  
+  <!-- ОТЗЫВЫ -->
+  <style type="text/css">
+   .rev { 
+     width: 320px; 
+     background: #fcfcfc;
+     padding: 1px;
+     padding-right: 1px; 
+     float: center;
+	 box-shadow: 0 4px 12px 0 rgba(255,0,0,0.2);
+	 border-radius: 15px;
+   }
+   .morph {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.4s ease;
+   }
+   .morph:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+   }
+  </style>
+     
+  <style>
+   .rew {
+     transition: 0.6s; /* Время эффекта */
+   }
+   .rew:hover {
+     transform: scale(1.1); /* Увеличиваем масштаб */
+   }
+  </style>	 
+   <center><h1><big><big><big><big><strong><font style="font-family:Font, Regular; font-size:60%"><big>ОТЗЫВЫ ИГРОКОВ</big></big></big></big></big></font></h1></strong></center>
+   <br>
+	<div class="container lasts">
+		<div class="users row">		  
+          <div class="rew col-base col-feature col-sm-6 col-md-4 wow fadeInUp">
+			    <center>
+                 <div class="morph rev">
+                  <br>
+                  <img src="https://minotar.net/helm/supergirl/90.png" style="border-radius: 15px;box-shadow: 0px 0px 25px -26px rgba(0,51,3,1);scale">
+                  <br>
+                  <br>
+                  <div><h1>Купила донат и офигела от таких возможностей за такую цену.. Спасибо разработчикам, что любят и ценят своих игроков!</h1></div>
+                  <br>
+                  <div><strong>vishnevoe4vino</strong></div>
+				  <div> </div>
+                <br>
+                 </div>
+			    </center>
+          </div>
+          <div class="rew col-base col-feature col-sm-6 col-md-4 wow fadeInUp">
+			    <center>
+                 <div class="morph rev">
+                  <br>
+                  <img src="https://minotar.net/helm/p99p/90.png" style="border-radius: 15px;box-shadow: 0px 0px 25px -26px rgba(0,51,3,1);">
+                  <br>
+                  <br>
+                  <div><h1>Очень ждал проект 3.0, каждый день заходил в группу, думал ну когда-же, и вот проект открывается, такого я ещё не видел!</h1></div>
+                  <br>
+                  <div><strong>EsweekY</strong></div>
+				  <div> </div>
+                <br>
+                 </div>
+			    </center>
+          </div>
+          <div class="rew col-base col-feature col-sm-6 col-md-4 wow fadeInUp">
+			    <center>
+                 <div class="morph rev">
+                  <br>
+                  <img src="https://minotar.net/helm/olipog/90.png" style="border-radius: 15px;box-shadow: 0px 0px 25px -26px rgba(0,51,3,1);">
+                  <br>
+                  <br>
+                  <div><h1>Купил донат, всё что написано - работает. Никогда не было обмана на этом проекте, не может не радовать!</h1></div>
+                  <br>
+                  <div><strong>OkyHb</strong></div>
+				  <div> </div>
+                <br>
+                 </div>
+			    </center>
+          </div>
+        </div>
+    </div>
+   <br>
+	<div class="container lasts">
+		<div class="users row">		  
+		  <div class="rew col-base col-feature col-sm-6 col-md-4 wow fadeInUp">
+			    <center>
+                 <div class="morph rev">
+                  <br>
+                  <img src="https://minotar.net/helm/SosiskaIO/90.png" style="border-radius: 15px;box-shadow: 0px 0px 25px -26px rgba(0,51,3,1);">
+                  <br>
+                  <br>
+                  <div><h1>Очень сильно ждал открытие нового CubsMc. Хотел наконец увидеть проект и поиграть на нём с друзьями. Вернули донат сразу. Обмана как не было, так и нет. Сервер топовый</h1></div>
+                  <br>
+                  <div><strong>SosiskaIO</strong></div>
+				  <div> </div>
+                <br>
+                 </div>
+			    </center>
+          </div>
+		  <div class="rew col-base col-feature col-sm-6 col-md-4 wow fadeInUp">
+			    <center>
+                 <div class="morph rev">
+                  <br>
+                  <img src="https://minotar.net/helm/FleikYT/90.png" style="border-radius: 15px;box-shadow: 0px 0px 25px -26px rgba(0,51,3,1);">
+                  <br>
+                  <br>
+                  <div><h1>Захотел купить донат Котик, ведь он самый. Зашёл на сайт, ввёл промо и получил скидку в 25%. Сижу сейчас на сервере и офигеваю от возможностей!</h1></div>
+                  <br>
+                  <div><strong>FleikYT</strong></div>
+				  <div> </div>
+                <br>
+                 </div>
+			    </center>
+          </div>
+        </div>
+    </div>
+	</section>
+	<br>
+	<br>
+	<br>
+			   <section id="news" class="news">
+  <!-- ОТЗЫВЫ -->
+  
+  
+   <br>
+   <br>
+  
+  <!-- КОНТАКТЫ -->
+  <div class="container">
+  <div class="col-12 col-lg-12">
+    <div class="row block text-center">
+        <div class="col-12 col-lg-4">
+            <a href="https://vk.com/CubsMc"/><h1 class="fab fa-vk">
+            <h3><a href="https://vk.com/CubsMc">Наш ВКонтакте</a></h3> 
+        </div>
+        <div class="col-12 col-lg-4">
+            <a href="https://discord.gg/ergerger"/><h1 class="fab fa-discord"/>
+            <h3><a href="https://discord.gg/erberber5h">Наш Дискорд</a></h3>
+        </div>
+        <div class="col-12 col-lg-4">
+            <a href="https://vk.me/CubsMc"/><h1 class="fa fa-envelope"/>
+            <h3><a href="https://vk.me/CubsMc">Есть вопрос?</a></h3>
+        </div>
+    </div>
+   </div>
+  </div>
+  <!-- КОНТАКТЫ -->
+   
+   <br>
+   <br>
+   
+  <!-- АВТОРСКИЕ ПРАВА -->
+  <footer>
+    <div class="container">
+        <p>2020 © CubsMc - Все права защищены!</p>
+    </div>
+  </footer>
+   <!-- АВТОРСКИЕ ПРАВА -->
+   
+   <!-- СКРИПТ ПО ПЕРЕХОДУ ПО МЕНЮ ДЛЯ ТЕЛЕФОНОВ -->
+  <script type="text/javascript">
+        $(function() {
+            $('#sidenav_mobile_close').click(function() {
+                $('#sidenav_mobile').removeClass('active');
+            });
+            $('#sidenav_mobile_toggle').click(function() {
+                $('#sidenav_mobile').toggleClass('active');
+            });
+        });
+
+        $.fn.setClass = function(classes) {
+            this.attr('class', classes);
+            return this;
+        };
+    </script>
+	<!-- СКРИПТ ПО ПЕРЕХОДУ ПО МЕНЮ ДЛЯ ТЕЛЕФОНОВ -->
+	
+	
+	<!-- ФОН -->
+	<style>
+	   body {
+		background-image: url('img/fone.png');
+		background-position: center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+		background-attachment: fixed;
+	}
+	</style>
+	<!-- ФОН -->
+	
+	<!-- ЗАГРУЗКА -->
+	  <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+       </script>
+     <!-- ЗАГРУЗКА -->
+	 
+	 
+	 <!-- ОНЛАЙН -->
+	  <script type="text/javascript">
+         $.post('/engine/ajax.php?type=stat/online',{},function(data){
+         $('#online').html(data);
+         });
+		$.post('/engine/ajax.php?type=donaters',{},function(data){
+         $('#donaters').html(data);
+         });
+		$.post('/engine/ajax.php?type=ozydanie',{},function(data){
+         $('#ozydanie').html(data);
+         });
+      </script>
+	 <!-- ОНЛАЙН -->
+	 
+<!-- ДЛЯ РАБОТЫ ВЫБОРА РЕЖИМА ПРИ ПОКУПКЕ --> 
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2MineWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="res/script.js"></script> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="res/jquery-ui-1.10.4.custom.js"></script>
+<script src="res/countdown.js"></script> 
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- ДЛЯ РАБОТЫ ВЫБОРА РЕЖИМА ПРИ ПОКУПКЕ --> 
+	 
+	 
+</body>
+</html>
